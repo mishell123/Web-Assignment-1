@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Web</title>
+       <link rel = "stylesheet" href="./web.css">
+   </head>
+
+   <body>
+      
+      <div class="bg-image img1">
+         <div class="tooltip1" id="ic">
+            <a href="web.html"><img id="icon" src="icon.jpg"></a>
+            <span class="tooltiptext1">Go to Home tab</span>
+         </div>
+
+            <p class="top1"><a class="no-link" href="#h1">About</a></p>
+            <p class="top2"><a class="no-link" href="#h2">Educational Details</a></p>
+            <p class="top3"><a class="no-link" href="#h3">Connect</a></p>
+
+         <div>
+            <p id="p1">Hi, I am</p>
+            <p id="p2">Mishell Mariya Joseph</p>
+            <p id="p3">I'm &nbspa &nbspComputer &nbspEngineering &nbspStudent</p>
+            <p id="p4">& &nbspa &nbspWeb &nbspDeveloper</p>
+         </div>
+
+      </div>
+
+      <div class="bg-image img2">
+         <img id="img5" src="me.jpeg">
+         <header id="h1"><b>About</b></header>
+         <p id="ab1">Hey there!</p>
+         <p id="ab2">My name is <b>Mishell Mariya Joseph</b>, and I'm an undergraduate student <br>in Computer Science at the St. Joseph's College of Engineering & <br>Technology, Palai. I am a technology enthusiast and a <br>web learner. I love to brush my knowledge on a daily basis <br>and also to solve problems. Whether it's finding the most elegant <br>way to write a line of code or figuring out which alternate method <br>can be used.</p>
+         <p id="ab3">I wish to develop my career in web development. <br>Currently I'm emphasizing my study on front end development and <br>I'm pretty good with my HTML, CSS and JavaScript skills.</p>
+      </div>
+
+      <div class="bg-image img3">
+         <header id="h2"><b>Educational Details</b></header>
+         <p id="ed1"><b>Degree :</b></p>
+         <p id="ed2">BTech (Computer Science) : St. Joseph's College of Engineering & Technology, Palai<br>2018 - 2022</p>
+         <p id="ed3"><b>Schooling :</b></p>
+         <p id="ed4">Higher Secondary (XII) : Chavara Public School, Pala<br>Percentage - 63<br>High School (X) : Mount Mary Public School, Maalam<br>CGPA - 9.6</p>
+      </div>
+
+      <div class="bg-image img4">
+         <header id="h3"><b>Connect</b></header>
+         <p id="con1"><b>Ping me at:</b></p>
+         <p id="con2"><a class="no-link" href="mailto:mishelljoseph@gmail.com" target="_blank">mishelljoseph@gmail.com</a></p>
+         <p id="con3"><b>LinkedIn:</b></p>
+         <p id="con4"><a class="no-link" href="https://www.linkedin.com/in/mishell-mariya-joseph-227290174" target="_blank">https://www.linkedin.com/in/mishell-mariya-joseph-227290174</a></p>
+         <p id="con5"><b>Instagram:</b></p>
+         <p id="con6"><a class="no-link" href="https://instagram.com/mishell_mariya_joseph?utm_medium=copy_link" target="_blank">https://instagram.com/mishell_mariya_joseph?utm_medium=copy_link</a></p>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><b>Up</b></button>       
+      <script>
+         //Get the button
+         var mybutton = document.getElementById("myBtn");
+
+         // When the user scrolls down 20px from the top of the document, show the button
+         window.onscroll = function() {scrollFunction()};
+
+         function scrollFunction() {
+           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+             mybutton.style.display = "block";
+           } else {
+             mybutton.style.display = "none";
+           }
+         }
+
+         // When the user clicks on the button, scroll to the top of the document
+         function topFunction() {
+           document.body.scrollTop = 0;
+           document.documentElement.scrollTop = 0;
+         }
+      </script>  
+
+   </body>
+</html>
